@@ -25,12 +25,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: -9vw; }
-  @media only screen and (max-width: 59.37em) {
-    body {
-      background-image: url(../img/bg-mobile.svg);
-      background-size: contain;
-      background-position: 0 top;
-      padding: 1rem 4.5rem; } }
 
 /*
     || HEADER 
@@ -110,8 +104,8 @@ body {
   .footer__icon {
     width: 2rem;
     height: 2rem;
-    padding: .8rem;
-    border: .2rem solid #fff;
+    padding: 0.8rem;
+    border: 0.2rem solid #fff;
     fill: #fff;
     border-radius: 50%;
     margin-left: 1.4rem;
@@ -124,6 +118,11 @@ body {
     || MEDIA QUERIES
 */
 @media only screen and (max-width: 59.37em) {
+  body {
+    background-image: url(../img/bg-mobile.svg);
+    background-size: contain;
+    background-position: 0 top;
+    padding: 1rem 4.5rem; }
   .main {
     flex-direction: column;
     padding: 0rem; }
