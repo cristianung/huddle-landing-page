@@ -1,0 +1,154 @@
+/*
+    || HEADER 
+*/
+
+.header {
+    height: 7rem;
+    margin: 4rem auto;
+
+    display: flex;
+    align-items: center;
+
+    &__logo {
+        height: 5.3rem;
+
+        @media only screen and (max-width: $bp-small) {
+            height: 4rem;
+        }
+    }
+}
+
+/*
+    || MAIN
+*/
+
+.main {
+    display: flex;
+    padding-top: 3.3rem;
+
+    &__mockup {
+        flex: 0 0 50%;
+
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__description {
+        flex: 1;
+        padding: 5rem 6rem;
+    }
+}
+
+/* || Typography */
+
+.heading {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.paragraph {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 3.5rem;
+}
+
+/*
+    || BUTTON
+*/
+
+.btn {
+    display: block;
+    text-align: center;
+    width: 10rem;
+    text-decoration: none;
+    border: .2rem solid var(--color-primary-violet);
+    padding: 1.6rem 5rem;
+    border-radius: 5rem;
+    color: var(--color-primary-violet);
+    background-color: #fff;
+    font-size: 1.9rem;
+    margin-top: 3rem;
+    box-shadow: .4rem .4rem .8rem rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: var(--color-primary-soft-magenta);
+        color: #fff;
+    }
+}
+
+/*
+    || FOOTER
+*/
+
+.footer {
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 3.2rem;
+
+    &__icon-box {
+        margin-right: 2rem;
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        padding: .8rem;
+        border: .2rem solid #fff;
+        fill: #fff;
+        border-radius: 50%;
+        margin-left: 1.4rem;
+        transition: all 0.2s;
+
+        &:hover {
+            border: .2rem solid var(--color-primary-soft-magenta);
+            fill: var(--color-primary-soft-magenta);
+        }
+    }
+}
+
+/*
+    || MEDIA QUERIES
+*/
+
+@media only screen and (max-width: $bp-medium) {
+
+    .main {
+        flex-direction: column;
+        padding: 0rem;
+
+        &__description {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .paragraph { font-size: 2.2rem; }
+
+    .btn{ width: 20rem; }
+
+    .footer { justify-content: center; }
+}
+
+@media only screen and (max-width: $bp-small) {
+
+    .header {
+        &__logo { height: 4rem; }
+    }
+
+    .main {
+        &__description { padding: 5rem 0; }
+    }
+
+    .heading { font-size: 3.6rem; }
+}
