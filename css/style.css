@@ -100,6 +100,8 @@ body {
   margin-top: 3.2rem; }
   .footer__icon-box {
     margin-right: 2rem; }
+    .footer__icon-box a {
+      text-decoration: none; }
   .footer__icon {
     width: 2rem;
     height: 2rem;
