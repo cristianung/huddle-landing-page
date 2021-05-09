@@ -60,7 +60,8 @@
     || BUTTON
 */
 
-.btn {
+.btn,
+.btn:focus {
     display: block;
     text-align: center;
     width: 10rem;
@@ -76,7 +77,7 @@
     transition: all 0.3s;
 
     &:hover,
-    &:focus-visible {
+    &:focus {
         background-color: var(--color-primary-soft-magenta);
         color: #fff;
     }
