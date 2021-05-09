@@ -31,7 +31,6 @@
 
         &-img {
             width: 100%;
-            height: 100%;
         }
     }
 
@@ -76,7 +75,8 @@
     box-shadow: 0.4rem 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
     transition: all 0.3s;
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
         background-color: var(--color-primary-soft-magenta);
         color: #fff;
     }
